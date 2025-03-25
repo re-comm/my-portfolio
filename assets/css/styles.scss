@@ -79,6 +79,12 @@ a {
 .hero.hero-index {
   /* Uses Liquid to reference the hero-bg.jpg if stored in assets/images/ */
   background: url("{{ '/assets/images/hero-bg.jpg' | relative_url }}") center / cover no-repeat;
+
+  min-height: 60vh; /* 60% of the viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* SERVICES SECTION (applies to the .services container) */
