@@ -1,0 +1,24 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} – Your Brand Name</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+  </head>
+  <body>
+
+    <!-- Include the nav partial -->
+    {% include nav.html %}
+
+    <!-- Main page content -->
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Your Brand Name. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
