@@ -74,10 +74,7 @@ a {
 */
 
 .hero {
-  background: url('/assets/images/hero-bg.jpg') center/cover no-repeat;
-  color: white;
-  padding: 6rem 2rem;
-  text-align: center;
+  background: url("{{ '/assets/images/hero-bg.jpg' | relative_url }}") center/cover no-repeat;
 }
 
 .hero-content h2 {
