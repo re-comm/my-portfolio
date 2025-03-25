@@ -21,6 +21,48 @@ a {
   text-decoration: none;
 }
 
+/* ------------------------------------------ */
+/* TYPOGRAPHY                                */
+/* ------------------------------------------ */
+
+/* Global heading resets */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2; /* a bit tighter than body text */
+  color: #111; /* headings match  brand colour */
+}
+
+/* Specific heading sizes */
+h1 {
+  font-size: 2.5rem; /* ~40px */
+}
+h2 {
+  font-size: 2rem;   /* ~32px */
+}
+h3 {
+  font-size: 1.5rem; /* ~24px */
+}
+
+/* Paragraphs & other text elements */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Optional: fine-tune spacing on smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* scale down for tablets/phones */
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
 /* NAVBAR (Optional placeholder styles) */
 .navbar {
   background: #000;
