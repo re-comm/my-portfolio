@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  line-height: 1; /* a bit tighter than body text */
+  line-height: 1;
 }
 
 /* Specific heading sizes */
@@ -51,14 +51,15 @@ p {
 
 /* NAVBAR LOGO padding OVERRIDE */
 .navbar .logo {
-  margin: 0;    /* remove top/bottom margin from h1 */
-  padding: 0;   /* remove any extra padding */
-  line-height: 1;  /* tighten spacing if desired */
+  margin: 0;    
+  padding: 0;   
+  line-height: 1;  
+}  /* <-- CLOSE this block here */
 
 /* Optional: fine-tune spacing on smaller screens */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem; /* scale down for tablets/phones */
+    font-size: 2rem; 
   }
   h2 {
     font-size: 1.75rem;
@@ -68,11 +69,9 @@ p {
   }
 }
 
-/* NAVBAR (Optional placeholder styles) */
-
-/* Force the navbar logo to be white */
+/* Force the navbar logo text to be white */
 .navbar .logo {
-  color: #fff; /* or another color that contrasts with the navbar’s background */
+  color: #fff;
 }
 
 .navbar {
@@ -116,24 +115,16 @@ p {
 
 /* HERO SECTION - default style for .hero */
 .hero {
-  /* Fallback or standard hero style if you don't want an image here */
   background: #333; 
   color: white;
   padding: 6rem 2rem;
   text-align: center;
-
-  /* Optional: If you want text bigger, etc.
-  .hero-content h2 {
-    font-size: 2.5rem;
-  } */
 }
 
 /* SPECIAL HERO FOR INDEX PAGE ONLY */
 .hero.hero-index {
-  /* Uses Liquid to reference the hero-bg.jpg if stored in assets/images/ */
   background: url("{{ '/assets/images/hero-bg.jpg' | relative_url }}") center / cover no-repeat;
-
-  min-height: 60vh; /* 60% of the viewport height */
+  min-height: 60vh;
   color: #fff; 
   display: flex;
   align-items: center;
@@ -141,7 +132,7 @@ p {
   text-align: center;
 }
 
-/* SERVICES SECTION (applies to the .services container) */
+/* SERVICES SECTION */
 .services {
   background: #fff;
   padding: 0rem 2rem;
@@ -152,70 +143,4 @@ p {
 .service-cards {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 2rem;
-}
-
-/* Each .card inside .service-cards */
-.card {
-  background: #f9c999;
-  padding: 1rem;
-  text-align: center;
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 2px;
-  }
-}
-
-/* CONTACT SECTION */
-.contact {
-  background: #ff5c1f;
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-
-  .contact-form {
-    margin-top: 2rem;
-    display: grid;
-    gap: 1rem;
-    max-width: 500px;
-    margin-inline: auto;
-
-    input,
-    textarea {
-      padding: 0.8rem;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-    }
-
-    button {
-      background: white;
-      color: #ff5c1f;
-      border: none;
-      padding: 0.8rem;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  }
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #999;
-}
-
-/* LIMIT PORTRAIT IMAGES TO 300PX ON THE PORTRAITS PAGE */
-/* Make sure your portraits.html has <body class="portraits-page"> */
-.portraits-page .service-cards .card img {
-  max-width: 300px;
-  height: auto;
-}
-}
-
+  grid-template
