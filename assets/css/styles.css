@@ -103,6 +103,11 @@ a {
   margin-top: 2rem;
 }
 
+.service-cards img {
+  max-width: 300px;
+  height: auto;
+}
+
 .card {
   background: #f9c999;
   padding: 1rem;
