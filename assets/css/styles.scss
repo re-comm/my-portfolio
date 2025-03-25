@@ -64,6 +64,12 @@ p {
 }
 
 /* NAVBAR (Optional placeholder styles) */
+
+/* Force the navbar logo to be white */
+.navbar .logo {
+  color: #fff; /* or another color that contrasts with the navbar’s background */
+}
+
 .navbar {
   background: #000;
   color: white;
