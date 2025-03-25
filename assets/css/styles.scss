@@ -28,9 +28,9 @@ a {
 /* Global heading resets */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.2; /* a bit tighter than body text */
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  line-height: 1; /* a bit tighter than body text */
   color: #111; /* headings match  brand colour */
 }
 
