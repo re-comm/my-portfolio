@@ -50,6 +50,12 @@ p {
   margin-bottom: 1rem;
 }
 
+/* NAVBAR LOGO padding OVERRIDE */
+.navbar .logo {
+  margin: 0;    /* remove top/bottom margin from h1 */
+  padding: 0;   /* remove any extra padding */
+  line-height: 1;  /* tighten spacing if desired */
+
 /* Optional: fine-tune spacing on smaller screens */
 @media (max-width: 768px) {
   h1 {
