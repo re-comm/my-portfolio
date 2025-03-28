@@ -1,0 +1,15 @@
+{
+    "liveServer.settings.port": 5501,
+    "files.exclude": {
+      "**/_site": true,
+      "**/.jekyll-cache": true,
+      "**/*.lock": true,
+      "**/*.map": true
+    },
+    "search.exclude": {
+      "**/_site": true,
+      "**/.jekyll-cache": true
+    },
+  "css.validate": false,
+    "scss.validate": false
+  }

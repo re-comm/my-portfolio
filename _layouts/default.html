@@ -1,0 +1,41 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} – Your Brand Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  </head>
+  <body>
+
+    <!-- Include the nav partial -->
+    {% include nav.html %}
+
+    <!-- Main page content -->
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Robert Edmond. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+    
+        if (burger && nav) {
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            burger.classList.toggle('open');
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', (!expanded).toString());
+          });
+        }
+      });
+    </script>
+
+  </body>
+</html>

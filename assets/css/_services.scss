@@ -1,0 +1,31 @@
+
+/* Services Section */
+.services {
+  padding: 3rem 1.5rem;
+  background: #fdf9f6;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.card h3 {
+  color: #ff5c1f;
+}
+
+.card a {
+  color: #ff5c1f;
+  font-weight: bold;
+}

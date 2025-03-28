@@ -1,0 +1,463 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------------------------------- */
+/* TYPOGRAPHY                         */
+/* ---------------------------------- */
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-book, .btn-outline {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-book {
+  background: #ff5c1f;
+  color: white;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ff5c1f;
+  border: 2px solid #ff5c1f;
+}
+
+.btn-book:hover, .btn-outline:hover {
+  opacity: 0.85;
+}
+
+/* ---------------------------------- */
+/* HERO SECTION                       */
+/* ---------------------------------- */
+.hero.hero-index {
+  background: url("/assets/images/hero-bg.jpg") center/cover no-repeat;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40vh;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/* BIO SECTION                        */
+/* ---------------------------------- */
+.bio-intro {
+  padding: 3rem 1.5rem;
+  background: #fafafa;
+  text-align: center;
+}
+
+.bio-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/* CLIENT TRUST SECTION               */
+/* ---------------------------------- */
+.clients {
+  padding: 2rem 1.5rem;
+  background: #fff5ee;
+  text-align: center;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.client-logos img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+/* ---------------------------------- */
+/* SERVICES OVERVIEW                  */
+/* ---------------------------------- */
+.services {
+  padding: 3rem 1.5rem;
+  background: #fdf9f6;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.card h3 {
+  color: #ff5c1f;
+}
+
+.card a {
+  color: #ff5c1f;
+  font-weight: bold;
+}
+
+/* ---------------------------------- */
+/* PORTFOLIO PREVIEW                  */
+/* ---------------------------------- */
+.portfolio-preview {
+  padding: 3rem 1.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.preview-grid img {
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------- */
+/* TESTIMONIAL                        */
+/* ---------------------------------- */
+.testimonial {
+  background: #ffefe6;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+blockquote {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* ---------------------------------- */
+/* CALL TO ACTION                     */
+/* ---------------------------------- */
+.cta-block {
+  padding: 3rem 1.5rem;
+  background: #ff5c1f;
+  color: white;
+  text-align: center;
+}
+
+.cta-block .btn-book {
+  margin-top: 1rem;
+}
+
+/* ---------------------------------- */
+/* CONTACT FORM                       */
+/* ---------------------------------- */
+.contact {
+  background: #f8f8f8;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background: #ff5c1f;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* FOOTER                             */
+/* ---------------------------------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+/* ---------------------------------- */
+/* MEDIA QUERIES                      */
+/* ---------------------------------- */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .service-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    flex: 1;
+    max-width: 320px;
+  }
+  .preview-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero.hero-index {
+    background: url("/assets/images/hero-bg.jpg") center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+/* Navbar */
+.navbar {
+  background: #000;
+  color: white;
+  padding: 1rem 2rem 1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar .logo {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 1.75rem;
+}
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #ff5c1f;
+  padding-bottom: 2px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar .nav-links a {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 2px;
+}
+.navbar .nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff5c1f;
+  transition: width 0.04s ease;
+}
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+.navbar .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20;
+}
+.navbar .burger span {
+  height: 2px;
+  background: #fff;
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .burger {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    border: none;
+    background: none;
+    z-index: 50;
+    cursor: pointer;
+  }
+  .navbar .burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0s;
+  }
+  .navbar .burger span:nth-child(1) {
+    top: 2px;
+  }
+  .navbar .burger span:nth-child(2) {
+    top: 11px;
+  }
+  .navbar .burger span:nth-child(3) {
+    top: 20px;
+  }
+  .navbar .burger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 12px;
+  }
+  .navbar .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar .burger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #000;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+  .navbar .nav-links a {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+  .navbar .nav-links.open {
+    display: flex;
+  }
+  .navbar .btn-book {
+    font-size: 1.125rem;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    align-self: stretch;
+    text-align: center;
+  }
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

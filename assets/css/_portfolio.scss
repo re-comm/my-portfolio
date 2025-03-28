@@ -1,0 +1,19 @@
+
+/* Portfolio Preview */
+.portfolio-preview {
+  padding: 3rem 1.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.preview-grid img {
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
