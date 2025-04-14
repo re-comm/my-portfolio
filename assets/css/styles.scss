@@ -59,7 +59,7 @@ p {
 /* Buttons */
 .btn-book, .btn-outline {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1.25rem;
   border-radius: 999px;
   font-weight: bold;
   text-align: center;
@@ -101,6 +101,26 @@ p {
   max-width: 100vw;
   overflow: hidden;
   margin: 0 auto;
+  position: relative; // needed for absolute positioning
+  padding-bottom: 4rem; 
+  
+}
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: inline-block; // wraps tightly around content
+  background-color: rgba(0, 0, 0, 0.4); // subtle contrast box
+  padding: 1rem 1.5rem; // comfortable padding
+  border-radius: 6px; // smooth corners
+
+  h1, p {
+    color: #ffffff; // ensures high contrast on dark background
+    margin: 0; // removes extra margin inside the box
+  }
+
+  h1 {
+    margin-bottom: 0.5rem; // maintains spacing between h1 and p
+  }
 }
 
 
@@ -348,13 +368,36 @@ footer {
     padding: 0;
     line-height: 1;
     font-size: 1.75rem;
+    position: relative;
 
     a {
       color: white;
       text-decoration: none;
       display: inline-block;
-      border-bottom: 2px solid #ff5c1f;
       padding-bottom: 2px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0; // aligns exactly with left edge of logo text
+        width: 100%; // spans the full width of logo text
+        height: 2px;
+        background-color: #ff5c1f;
+        z-index: 2;
+      }  
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 100%; // extend fully to the left
+        width: 100vw;
+        height: 2px;
+        z-index: 1;
+        background-color: #ff5c1f;
+      }
     }
   }
 
@@ -418,7 +461,7 @@ footer {
       justify-content: space-between;
       align-items: center;
     }
-  
+
     .burger {
       position: relative;
       width: 30px;
@@ -432,43 +475,43 @@ footer {
       background: none;
       z-index: 50;
       cursor: pointer;
-  
+
       span {
         position: absolute;
         width: 100%;
         height: 2px;
         background: #fff;
         border-radius: 2px;
-        transition: all 0s;
+        transition: all 0.3s ease;
       }
-  
+
       span:nth-child(1) {
         top: 2px;
       }
-  
+
       span:nth-child(2) {
         top: 11px;
       }
-  
+
       span:nth-child(3) {
         top: 20px;
       }
-  
+
       &.open span:nth-child(1) {
         transform: rotate(45deg);
         top: 12px;
       }
-  
+
       &.open span:nth-child(2) {
         opacity: 0;
       }
-  
+
       &.open span:nth-child(3) {
         transform: rotate(-45deg);
         top: 12px;
       }
     }
-  
+
     .nav-links {
       display: none;
       flex-direction: column;
@@ -479,17 +522,17 @@ footer {
       top: 100%;
       left: 0;
       z-index: 10;
-  
+
       a {
         padding: 1rem;
         font-size: 1.25rem;
       }
     }
-  
+
     .nav-links.open {
       display: flex;
     }
-  
+
     .btn-book {
       font-size: 1.125rem;
       padding: 0.75rem 1rem;
@@ -497,7 +540,7 @@ footer {
       align-self: stretch;
       text-align: center;
     }
-  
+
     .logo a {
       font-size: 1.5rem;
     }
